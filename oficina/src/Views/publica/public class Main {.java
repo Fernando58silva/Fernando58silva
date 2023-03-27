@@ -1,0 +1,5 @@
+CREATE TABLE JOGADOR
+(
+    ID_JOGADOR 
+)
+

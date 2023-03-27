@@ -1,0 +1,126 @@
+.blog_detalhe{
+    padding: 100px 0px;
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .noticia{
+            width: 100%;
+            margin-bottom: 50px;
+            .titulo{
+                font-size: 24px;
+                font-family:'Montserrat Bold' ;
+                margin-bottom: 25px;
+                &::after{
+                    left:0;
+                    top:100%;
+                }
+            }
+
+            .data{
+                margin-bottom: 25px;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+            }
+
+            img{
+                width: 100%;
+                display: block;
+                margin-bottom: 25px;
+            }
+
+            p{
+                margin-bottom: 25px;
+                &:last-child{
+                    margin-bottom: 25px;
+                }
+            }
+
+            ul{
+                margin-bottom: 25px;
+
+                li{
+                    list-style: inside;
+                }
+            }
+
+            @include desktop{
+                width: 66%;
+                margin-bottom: 0px;
+            }
+        }
+
+        .ultimas_noticias{
+            width: 100%;
+            .titulo{
+                font-size: 24px;
+                font-family: 'Montserrat Bold';
+                margin-bottom: 70px;
+                &:after{
+                    left: 0;
+                    top: 100%;
+                }
+            }
+
+            .itens{
+                .item{
+                    width: 100%;
+                    display: inline-block;
+                    margin-bottom: 25px;
+                    .img{
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+        
+                    .info{
+                        border: 1px solid #fff;
+                        padding: 20px;
+                        background-color: black;
+                        margin:  0px;
+                        position: relative;
+                        z-index: 2;
+        
+                        .titulo{
+                            font-size: 20px;
+                            font-family: 'Montserrat Bold';
+                            margin-bottom: 25px;
+                            &:after{
+                               display: none;
+                            }
+                        }
+        
+                        .data{
+                            font-size: 14px;
+                            width: max-content;
+                            margin: -65px -2px 0 0;
+                            float: right;
+                            background-color: blue;
+                            padding: 10px 15px;
+                        }
+        
+                        .link{
+        
+                            a{
+                            font-size: 18px;
+                            color: blue;
+                            text-decoration: underline;
+                            font-family: 'Montserrat bold';
+                            text-decoration: none;
+                            transition: .20s;
+                            &:hover{
+                                color: #fff;
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include desktop{
+                width: 30%;
+            }
+        }
+    }
+}

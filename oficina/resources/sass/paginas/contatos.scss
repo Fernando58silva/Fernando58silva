@@ -1,0 +1,202 @@
+.fale_conosco{
+    padding: 60px 0;
+}
+.fale_conosco .topo{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fale_conosco .topo .form,
+.fale_conosco .topo .contatos{
+    width: 100%;
+}
+.fale_conosco .topo .form{
+background-color: #292929;
+padding: 25px;
+}
+.fale_conosco .topo .form h2{
+    font-size: 24px;
+    font-family: 'Montserrat Bold';
+    margin-bottom: 25px;
+}
+.fale_conosco .topo .form form{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+.fale_conosco .topo .form form input[type='text'],
+.fale_conosco .topo .form form input[type='email']{
+    width: 100%;
+    padding: 11px 15px;
+    background-color: #fff;
+    color: #292929;
+    border: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.fale_conosco .topo .form form textarea{
+    font-family: 'Montserrat Regular';
+    width: 100%;
+    padding: 11px 15px;
+    background-color: #fff;
+    color: #292929;
+    border: 0px;
+    font-size: 16px;
+    height: 115px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 115px;
+    max-height: 115px;
+
+}
+.fale_conosco .topo .form form .btn_acao{
+    margin-top: 20px;
+}
+.fale_conosco .topo .form form .btn_acao .btn{
+        border: 3px solid blue;
+        border-radius: 10px;
+        background-color: transparent;
+        display: block;
+        margin: 0 auto;
+        max-width: max-content;
+        transition: .30s;
+        
+
+        button{
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 12px 25px;
+            display: block;
+            background-color: transparent;
+            color: #fff;
+            font-family: 'Montserrat Regular ';
+            font-size: 16px;
+            border: 0;
+            width: 220px;
+            cursor: pointer;
+        }
+
+        &:hover{
+            background-color: #000000;
+        }
+    }
+    .fale_conosco .topo .form form .resposta{
+        width: 100%;
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-top: 20px;
+        font-family: 'Montserrat Bold';
+    }
+    .fale_conosco .topo .form form .resposta.sucesso{
+            border: 1px solid green;
+            background-color: #95ff95;
+            color: #050;
+           
+    }
+    .fale_conosco .topo .form form .resposta.error{
+            border: 1px solid red;
+            background-color: #ffc5c5;
+            color: #aa0202;
+    }
+
+.fale_conosco .topo .contatos{
+    border: 1px solid #fff;
+    padding: 25px;
+    margin-top: 40px;
+    .titulo{
+        font-size: 24px;
+        font-family: 'Montserrat Bold';
+        margin-bottom: 35px;
+        position: relative;
+
+        &:after{
+            display: none;
+
+        }
+    }
+        .informacoes{
+            .endereco,
+            .telefone,
+            .email{
+                display: inline-flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-bottom:40px;
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    padding: 10px;
+                    background-color: $color_destaque;
+                    border-radius: 5px;
+                    svg{
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    margin-left: 15px;
+                    width: calc(100% - 55px);
+
+                    strong{
+                        display: block;
+                        font-family: 'Montserrat Bold';
+                    }
+                    a{
+                        transition: .20s;
+                        &:hover{
+                            color:blue;
+                        }
+                    }
+                }
+            }
+
+        }
+        .redes-social{
+            margin-top: 25px;
+            width: 100%;
+            text-align: left;
+            
+            a{
+                border-radius: 5px;
+                padding: 10px;
+                background-color: $color_destaque;
+                margin-right: 5px;
+                width: 35;
+                height: 35px;
+                font-size: 15px;
+                transition: .30s;
+                &:last-child{
+                    margin-right: 0px;
+            }
+            &:hover{
+                color:$color_destaque_hover;
+            }
+        }
+    }
+    }
+
+.fale_conosco .iframe_mapa{
+    margin-top: 40px;
+}
+@include desktop{
+    .fale_conosco .topo .form{
+        width: 55%;
+        margin-bottom: 0px
+    }
+    .fale_conosco .topo .contatos{
+        width: 36%;
+        margin-top: 0px;
+        
+    }
+    .fale_conosco .topo .form form input[type='text'],
+   .fale_conosco .topo .form form input[type='email']{
+        width: 49%;
+   }
+}

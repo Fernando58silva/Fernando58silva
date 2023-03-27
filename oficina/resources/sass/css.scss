@@ -1,0 +1,41 @@
+/* Variaveis
+-------------------------------------------------- */
+$color_destaque: #071899;
+$color_destaque_hover: #0a22af;
+$font_size: 16px;
+$font_family: 'Montserrat Regular';
+$line_height: 1.3;
+
+
+/* RESET CSS
+-------------------------------------------------- */
+@import "style/reset";
+
+
+/* Fontes
+-------------------------------------------------- */
+@import "fontes/montserrat";
+
+/* Plugins
+-------------------------------------------------- */
+@import "plugins/slick";
+@import "plugins/slick-theme";
+@import "plugins/swipebox.scss";
+
+/* Padrão
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "style/header";
+@import "style/footer";
+@import "style/migalha";
+
+
+/* Páginas
+-------------------------------------------------- */
+@import "paginas/home";
+@import "paginas/a_FMG";
+@import "paginas/videos";
+@import "paginas/listagem_noticias";
+@import "paginas/contatos";
+@import "paginas/servico_detalhe";
+@import "paginas/blog_detalhe";
+@import "paginas/pagina_login";
